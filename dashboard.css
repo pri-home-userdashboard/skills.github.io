@@ -1,0 +1,411 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+background: #fafafd;
+
+}
+.wrapper{
+    width: 100%;
+    height: 100vh;    
+}
+.header{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 15px #0000003a;
+    position: fixed;
+    z-index: 20;
+    background: #ffffff;
+}
+.header-in-box{
+    width: 150px;
+    height: 50px;
+     /* border: 1px solid ;  */
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 20px;
+}
+.logo a{
+    text-decoration: none;
+    color: #000;
+}
+.collapse{
+    left: 0px;
+  }
+  .menus{
+    position: fixed;
+    left: -250px;
+    top: 50px;
+    background-color: #fcfcfcf8;
+    /* border: 1px solid; */
+    border-right: 1px solid gray;
+    width: 250px;
+    height: 100vh;
+    transition: .2s;
+    z-index: 20;
+    overflow-y: scroll;
+  
+
+}
+
+.header .logo h3{
+  margin-left: 0px;
+  margin-left: 20px;
+}
+.logo i{
+font-size: 1.4rem;
+}
+
+.menus ul {
+    margin: 50px 25px;
+}
+.menus ul li{
+    display: block;
+    text-align: start;
+    margin: 12px 0px;
+}
+.menus ul a{
+    text-decoration: none;
+    color: #000;
+}
+#bars{
+    display: block;
+    cursor: pointer;
+}
+.collapse{
+  left: 0px;
+}
+.menus ul i{
+    margin: 0px 9px;
+}
+.menus .user-pic{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+    border-bottom: 1px solid gray;
+    padding-bottom: 20px;
+    margin: 22px 0px -20px 0px;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+   
+}
+.menus .user-pic h4{
+    font-weight: 450;
+}
+.menus .user-pic img{
+    width: 50px;
+    height: 50px;
+    border-radius:  50%;
+    border: 1px solid #000;
+}
+/* content page design */
+.content{
+    width: 100%;
+    height: auto;
+    border: 1px solid ;
+    position: relative;
+    top: 50px;
+
+}
+
+.scorllTop{
+    width: 45px;
+    height: 45px;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    border: 3px solid #0804ff;
+    display: none;
+    place-items: center;
+    border-radius: 50%;
+    background: #ffff;
+    transition: 1s;
+    cursor: pointer;
+    z-index: 20;
+}
+.scorllTop .scorllTopArrow{
+    transform: rotate(180deg);
+    font-size: 2rem;
+    color: #000000;
+    margin-top: -5px;
+}
+.scorllTop{
+    right: 20px;
+    bottom: 10px;
+  }
+ 
+
+/* user dashboard design  */
+
+.user-dashboard{
+   width: 100%;
+   height: auto;
+   display: flex;
+  flex-direction: column;
+   gap: 40px;
+   justify-content: center;
+   align-items: center;
+   padding: 20px;
+    border: 1px solid green;
+
+
+}
+.user-dashboard-box{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid green; */
+}
+.user-dashboard .user-dashboard-box .user-details{
+    width: 90%;
+    height: auto;
+    padding: 8px 15px;
+    /* margin-left: 10px; */
+    /* border: 1px solid red; */
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+
+
+}
+.user-dashboard .user-dashboard-box .user-details .username{
+    font-weight: 450;
+}
+.user-dashboard .user-dashboard-box .user-details span{
+    font-size: .9rem;
+    color: #2f1b77;
+    font-weight: bold;
+     text-transform: uppercase;
+     letter-spacing: 1px;
+}
+.user-dashboard .user-dashboard-box .user-details .userBio{
+    width: 100%;
+    margin: 10px 0px;
+    
+}
+.user-dashboard .user-details .earnings{
+  position: relative;
+  top: 15px;
+  padding: 0px 0px  20px 0px ;
+  /* border: 1px solid; */
+  left: 0px !important;
+  margin: 20px 0px;
+  font-weight: 500 ;
+}
+.user-dashboard .user-dashboard-box .userPic{
+    width: 80px;
+    height: 80px;
+    border: 1px solid;
+    border-radius: 50%;
+}
+.user-dashboard .user-dashboard-box .userPic img{
+    width: 100%;
+    border-radius: 50% ;
+}
+.user-dashboard-course{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid red ; */
+   overflow-y: hidden;
+}
+.user-dashboard .user-dashboard-box .userBio{
+    width: 100%;
+    height: auto;
+}
+.user-dashboard-box .earnings-status{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+     gap: 40px ;
+    justify-content: center;
+
+}
+.earnings-status .total{
+    justify-self: start;
+}
+.user-dashboard-box  .earnings-status .heading{
+    padding: 3px 8px;
+    background: #ff0c71;
+    color: #fafafd;
+    font-weight: 500;
+}
+.user-dashboard-box  .earnings-status .heading1{
+    padding: 3px 8px;
+    background: #3ba2f7;
+    font-weight: 500;
+    color: #fafafd;
+}
+.user-dashboard-box  .earnings-status .heading2{
+    padding: 3px 8px;
+    background: #ffbf48;
+    font-weight: 500;
+    color: #fafafd;
+}
+.user-dashboard-box  .earnings-status .heading3{
+    padding: 3px 8px;
+    background: #ff6cff;
+    font-weight: 500;
+    color: #fafafd;
+}
+.user-dashboard-box  .earnings-status .heading4{
+    padding: 3px 8px;
+    background: #ff3265;
+    font-weight: 500;
+    color: #fafafd;
+}
+.user-dashboard-box  .earnings-status .heading5{
+    padding: 3px 8px;
+    background: #ff6c52;
+    font-weight: 500;
+    color: #fafafd;
+}
+.user-dashboard-box .earnings-status p{
+    font-size: 1.6rem;
+}
+.user-dashboard .earnings-status .today{
+ width: 280px;
+ height: 100px;
+ /* border: 1px solid; */
+ overflow: hidden;
+ background: #fceef33d;
+ border-radius: 5px;
+ box-shadow: 2px 3px 18px #0000003b;
+}
+
+.user-dashboard .rs{
+    width: 50px;
+    height: 50px;
+    background: #ffffff50;
+    text-align: center;
+    padding-top: 7.5px;
+    border-radius: 50%;
+    margin-top: 9px;
+    color: #000000;
+    margin-left: 20px;
+    font-size: 1.5rem;
+    box-shadow: 1px 10px 15px #2e2e2e3a;
+}
+
+
+.user-dashboard .earnings-status .today:nth-child(2){
+    background: #ddeffc2a;
+}
+.user-dashboard .earnings-status .today:nth-child(3){
+    background: #f8cbf852;
+}
+.user-dashboard .earnings-status .today:nth-child(4){
+    background: #ffecc94f;
+}
+.user-dashboard .earnings-status .today:nth-child(3){
+    background: #dbe9f54b;
+}
+.user-dashboard .earnings-status .today h3{
+    position: relative;
+    top: -38px;
+    left: 50%;
+    font-weight: 550;
+}
+
+/* course design here */
+#cr{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid ; */
+    overflow: scroll;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+   }
+   #cr .course1{
+    width: 400px;
+    height: auto;
+    border: 1px solid rgb(201, 201, 201);
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+   border-radius: 5px;
+   box-shadow: 2px 5px 15px #0000002c;
+ }
+ .book-img{
+    width: 200px;
+    height: 210px;
+    overflow: hidden;
+    
+ }
+ .book-img img{
+    width: 100%;
+    transition: .2s;
+ }
+ .book-img img:hover{
+    transform: scale(1.1);
+ }
+ .book-info{
+    width: 170px;
+    height: 210px;
+    margin-left: 25px;
+ }
+ .book-info h3{
+    padding: 5px 5px;
+ }
+ .book-info ul{
+    list-style: circle;
+    padding: 5px;
+ }
+ .price-box{
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 15px;
+    
+ }
+ .price{
+    width: 150px;
+    height: 40px;
+    /* border: 1px solid; */
+    
+ }
+ .price-box span{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(32, 25, 34);
+    padding: 5px;
+ }
+
+ .price-box .enroll{
+    padding: 2px 12px;
+    font-size: 1rem;
+    text-transform: capitalize;
+    background: #2c14b3e1;
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+ }
+ .price-box .enroll:hover{
+    background: #000000;
+ }
+
+

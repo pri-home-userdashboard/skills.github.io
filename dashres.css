@@ -1,0 +1,82 @@
+@media screen and (max-width: 768px) {
+    
+    .user-dashboard-box{
+        width: 100%;
+        height: auto;
+    }
+    .user-dashboard .user-dashboard-box .user-details .userBio{
+        width: 60%;
+        margin: 10px 0px;
+        
+    }
+     .user-dashboard-course{
+        width: 100%;
+     }
+     .user-dashboard .user-dashboard-box .user-details{
+        height: auto;
+        padding: 8px 3px;
+    }
+    .user-dashboard .earnings-status .today{
+        width: 350px;
+        height: 100px;
+    
+       }
+       .user-dashboard .user-details  .earnings{
+       
+        left: 25%;
+      }
+      .scorllTop{
+        width: 35px;
+        height: 35px;
+        right: 40px;
+        bottom: 25px;
+      }
+      .scorllTop .scorllTopArrow{
+        transform: rotate(180deg);
+        font-size: 1.3rem;
+        color: #000000;
+        margin-top: -5px}
+        
+        .scorllTop{
+            right: 20px;
+            bottom: 10px;
+          }
+          #cr{ 
+            gap: 0px;
+           }
+            #cr .course1{
+            justify-content: center;
+            }
+
+      }
+
+
+
+@media screen and (max-width: 425px) {
+    .user-dashboard .user-dashboard-box .user-details .userBio{
+        width: 100%;
+        margin: 10px 0px;
+        /* border: 1px solid; */
+        
+    }
+    .user-dashboard .earnings-status .today{
+        width: 88%;
+        height: 100px;
+    
+       }
+       .user-dashboard .user-details  .earnings{
+        left: 0px;
+      }
+      .user-dashboard .user-dashboard-box .user-details{
+        width: 100%;
+        height: auto;
+        margin-left: 0px;
+    }
+
+    .scorllTop{
+        right: 20px;
+        bottom: 10px;
+      }
+
+}
+

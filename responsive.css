@@ -1,0 +1,279 @@
+@media screen and (max-width:768px) {
+    .menus{
+        position: fixed;
+        left: -250px;
+        top: 50px;
+        background-color: #fcfcfcf8;
+        border: 1px solid;
+        width: 250px;
+        height: 100vh;
+        transition: .2s;
+        z-index: 20;
+      
+
+    }
+   
+    .header .logo h3{
+      margin-left: 0px;
+      margin-left: 20px;
+  }
+  .logo i{
+   font-size: 1.4rem;
+  }
+ 
+    .menus ul {
+        margin: 50px 25px;
+    }
+    .menus ul li{
+        display: block;
+        text-align: start;
+    }
+    #bars{
+        display: block;
+    }
+    .collapse{
+      left: 0px;
+    }
+    .boxes{ 
+       margin-left: 20px;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .boxes .box1{
+        width: 60% ;
+     
+     }
+     .first-page img{
+        display: none;
+
+     }
+     .first-page{
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        
+     }
+     .first-page{
+        background-image: url(images/mobimage.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .text-mob{
+        display: block;
+      color: #fff;
+      font-size: 1.8rem;
+      width: 100%;
+      height: auto;
+      padding: 20px;
+      /* border: 2px solid ; */
+      margin-top: 100px;
+    }
+     .box1 h2{
+        font-size: 1.8rem;
+     }
+     .btn{
+        padding: 5px 15px;
+        font-size: 1.2rem;
+        font-family: bold;
+        border-radius: 50px;
+        outline: none;
+        border: 1px solid transparent;
+        margin: 10px 15px;
+        background: transparent;
+        border: 2px solid #fff;
+        color: #fff;
+     }
+     .text-mob a{
+        text-decoration: none;
+     }
+     .first-page .text-mob .btn .fa-circle-arrow-right{
+        margin-left: 12px;
+     }
+     #cr{ 
+        gap: 0px;
+       }
+
+       .stauts1{
+         width: 325;
+     }
+     .user-status,.stauts1{
+      gap: 15px;
+     }
+     .team-box{
+      gap: 20px;
+  }
+  footer .footer-top{
+   display: none;
+  }
+  footer{
+   margin-top: 20px;
+}
+.scorllTop{
+  width: 35px;
+  height: 35px;
+  right: 40px;
+  bottom: 25px;
+}
+.scorllTop .scorllTopArrow{
+  transform: rotate(180deg);
+  font-size: 1.3rem;
+  color: #000000;
+  margin-top: -5px}
+  
+  .login-box{
+    width: 60%;
+    height: auto;
+    background: #f5f5f5;
+    display: block;
+    margin-top: 70px;
+ }
+ .login-box .leftBox{
+  display: none;
+ }
+ .login-box .rightBox{
+  width: 95%;
+  position: relative;
+  left: 50%;
+  /* border: 1px solid; */
+  height: auto;
+  transform: translate(-50%);
+ }
+ .login-box .rightBox input{
+  width: 80%;
+ }
+ .form{
+  border: 1px;
+ }
+ #WhatsApp{
+   display: none;
+ }
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:425px) {
+  
+    .boxes{
+        justify-content: start;
+        width: 100%;
+        align-items: start;
+        margin: 0px;
+        position: relative;
+        top: 10px;
+       
+    }
+    
+ 
+    /* .first-page{
+        background-image: url(images/mobimage.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .text-mob{
+        display: block;
+      color: #fff;
+      font-size: 1.8rem;
+      width: 100%;
+      height: auto;
+      text-align: center;
+    } */
+    .why-choose h1{
+      font-size: 1.4rem;
+        font-weight: 400;
+    }
+     .boxes .box1{
+        width: 88%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        padding: 18px;
+    }
+    .icon-box{
+        width: 80px;
+        height: 80px;
+        font-size: 3.5rem;
+        /* border: 1px solid ; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+     .icon-box i{
+        text-align: center;
+        margin-top: 10px;
+     }
+     .heading-box{
+        width: 100%;
+      float: none;
+      height: auto;
+      font-size: 1.3rem;
+      text-align: start;
+      line-height: 0px;
+      margin-bottom: 8px;
+     }
+     .details-box{ 
+        margin-top: 10px;
+        font-size: 1.2rem;
+       }
+       .box1 h2{
+        font-size: 1.3rem;
+     }
+     #cr .course1{
+     justify-content: center;
+     }
+     .price-box{
+      margin-top: -10px;
+      flex-wrap: wrap;
+      justify-content: space-around;
+     }
+     .price-box span{
+        font-size: 1.1rem;
+     }
+
+     .our_team .team-box .team1{
+      width: 425px;
+   
+  }
+  .comapny{
+   display: none;
+  }
+  .scorllTop{
+  
+    right: 20px;
+    bottom: 10px;
+  }
+  .login-box{
+    width: 90%;
+    height: auto;
+    background: #f5f5f5;
+    display: block;
+    margin-top: 150px;
+ }
+ .login-box .loginHeader{
+   justify-content: space-between;
+ margin-top: 0px;
+ padding: 0px 5px;
+ 
+}
+.fa-xmark{
+  position: relative;
+  top: 5px;
+}
+
+.form{
+  margin-top: -10px;
+}
+.form input{
+  width: 90% !important;
+}
+
+}
